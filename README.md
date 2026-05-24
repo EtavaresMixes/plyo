@@ -129,7 +129,7 @@ Vercel detecta SvelteKit via `adapter-auto`. Settings na UI do Vercel:
 - **Install / Build commands:** vêm do [`vercel.json`](./packages/plyo-ui/app/vercel.json)
 - **Environment Variables:** `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 
-Cada push pra `master` deploya prod; cada PR vira preview deploy.
+Cada push pra `main` deploya prod; cada PR vira preview deploy.
 
 ---
 
