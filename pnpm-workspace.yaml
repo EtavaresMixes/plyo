@@ -1,0 +1,11 @@
+packages:
+  - 'packages/**'
+  - 'libs/**'
+  - '!**/dist/**'
+  - '!**/.svelte-kit/**'
+  - '!**/build/**'
+  - '!**/node_modules/**'
+allowBuilds:
+  esbuild: true
+  nx: true
+  '@tailwindcss/oxide': true

@@ -1,0 +1,41 @@
+{
+  "name": "plyo-ui-app",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/plyo-ui/app/src",
+  "projectType": "application",
+  "tags": ["scope:plyo-ui", "type:app"],
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "continuous": true,
+      "options": {
+        "command": "vite dev",
+        "cwd": "packages/plyo-ui/app"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/build", "{projectRoot}/.svelte-kit"],
+      "options": {
+        "command": "vite build",
+        "cwd": "packages/plyo-ui/app"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "continuous": true,
+      "dependsOn": ["build"],
+      "options": {
+        "command": "vite preview --port 4173",
+        "cwd": "packages/plyo-ui/app"
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+        "cwd": "packages/plyo-ui/app"
+      }
+    }
+  }
+}

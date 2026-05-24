@@ -1,0 +1,37 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background card for context (remove if not needed) -->
+  <rect width="400" height="120" fill="#0a0a0b"/>
+  
+  <!-- Logo mark -->
+  <g transform="translate(24, 28)">
+    <!-- P vertical stem -->
+    <path d="M8 6 L8 58" stroke="#f5f1ea" stroke-width="5" stroke-linecap="round"/>
+    <!-- P loop -->
+    <path d="M8 6 L34 6 C45 6 52 13 52 24 C52 35 45 42 34 42 L8 42" 
+          stroke="#f5f1ea" stroke-width="5" stroke-linecap="round" 
+          stroke-linejoin="round" fill="none"/>
+    <!-- Sound waves emanating from the P -->
+    <path d="M54 22 Q62 18, 66 22" stroke="#ff2d6f" stroke-width="3.5" 
+          stroke-linecap="round" fill="none"/>
+    <path d="M58 30 Q66 26, 70 30" stroke="#ff2d6f" stroke-width="3.5" 
+          stroke-linecap="round" fill="none" opacity="0.55"/>
+    <!-- Lime accent dot - the "play" button -->
+    <circle cx="40" cy="24" r="4" fill="#d4ff3a"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="120" y="78" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="64" 
+        font-weight="500" 
+        fill="#f5f1ea" 
+        letter-spacing="-2">Plyo</text>
+  
+  <!-- Tagline -->
+  <text x="122" y="98" 
+        font-family="'Courier New', monospace" 
+        font-size="10" 
+        fill="#8a8585" 
+        letter-spacing="2"
+        text-transform="uppercase">PRESS · RELEASE · REDES</text>
+</svg>
